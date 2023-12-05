@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+package protobuf.common;
+
+message PBMetadata {
+    required uint32 length = 1;
+    required PBMessageType type = 2;
+}
