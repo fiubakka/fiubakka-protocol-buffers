@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+package protobuf.client;
+
+message PBClientMetadata {
+    required uint32 length = 1;
+    required PBClientMessageType type = 2;
+}
+
+enum PBClientMessageType {
+    PBPlayerInit = 0;
+    PBPlayerVelocity = 1;
+}

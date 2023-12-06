@@ -1,6 +1,6 @@
 syntax = "proto2";
 
-package protobuf.init;
+package protobuf.client.init;
 
 message PBPlayerInit {
   required string username = 1;
