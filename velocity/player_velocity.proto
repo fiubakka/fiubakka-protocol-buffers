@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package protobuf.velocity;
+
+message PBPlayerVelocity {
+    required string username = 1;
+    required float x = 2;
+    required float y = 3;
+}

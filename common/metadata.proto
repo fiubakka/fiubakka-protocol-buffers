@@ -9,4 +9,5 @@ message PBMetadata {
 
 enum PBMessageType {
     PBPlayerInit = 0;
+    PBPlayerVelocity = 1;
 }
