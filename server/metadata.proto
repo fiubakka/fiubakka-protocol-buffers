@@ -2,7 +2,7 @@ syntax = "proto2";
 
 package protobuf.server;
 
-message PBClientMetadata {
+message PBServerMetadata {
     required uint32 length = 1;
     required PBServerMessageType type = 2;
 }
