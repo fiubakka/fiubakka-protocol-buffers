@@ -9,4 +9,5 @@ message PBServerMetadata {
 
 enum PBServerMessageType {
     PBPlayerPosition = 0;
+    PBGameEntityState = 1;
 }
