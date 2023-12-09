@@ -3,5 +3,5 @@ syntax = "proto2";
 package protobuf.client.chat;
 
 message PBPlayerMessage {
-    required string message = 1;
+    required string content = 1;
 }
