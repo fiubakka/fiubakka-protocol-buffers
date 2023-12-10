@@ -5,4 +5,6 @@ package protobuf.server.position;
 message PBPlayerPosition {
     required float x = 1;
     required float y = 2;
+    required float velX = 3;
+    required float velY = 4;
 }
