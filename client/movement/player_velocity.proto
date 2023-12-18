@@ -1,8 +1,0 @@
-syntax = "proto2";
-
-package protobuf.client.movement;
-
-message PBPlayerVelocity {
-    required float x = 1;
-    required float y = 2;
-}
