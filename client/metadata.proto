@@ -9,6 +9,6 @@ message PBClientMetadata {
 
 enum PBClientMessageType {
     PBPlayerInit = 0;
-    PBPlayerVelocity = 1;
+    PBPlayerMovement = 1;
     PBPlayerMessage = 2;
 }
