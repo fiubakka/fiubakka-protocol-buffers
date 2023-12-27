@@ -14,6 +14,6 @@ message PBGameEntityPosition {
 }
 
 message PBGameEntityVelocity {
-  required float velX = 1;
-  required float velY = 2;
+  required float x = 1;
+  required float y = 2;
 }
