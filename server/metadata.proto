@@ -10,4 +10,5 @@ message PBServerMetadata {
 enum PBServerMessageType {
     PBGameEntityState = 0;
     PBPlayerMessage = 1;
+    PBPlayerInitReady = 2;
 }
