@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+package protobuf.server.init;
+
+message PBPlayerInitReady {
+  required PBPlayerInitialState initialState = 1;
+}
+
+message PBPlayerInitialState {
+  required PBPlayerPosition position = 1;
+}
+
+message PBPlayerPosition {
+  required float x = 1;
+  required float y = 2;
+}
