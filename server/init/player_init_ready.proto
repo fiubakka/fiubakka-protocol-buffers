@@ -8,9 +8,20 @@ message PBPlayerInitReady {
 
 message PBPlayerInitialState {
   required PBPlayerPosition position = 1;
+  required PBPlayerEquipment equipment = 2;
 }
 
 message PBPlayerPosition {
   required float x = 1;
   required float y = 2;
+}
+
+message PBPlayerEquipment {
+  required int32 hat = 1;
+  required int32 hair = 2;
+  required int32 eyes = 3;
+  required int32 glasses = 4;
+  required int32 facial_hair = 5;
+  required int32 body = 6;
+  required int32 outfit = 7;
 }
