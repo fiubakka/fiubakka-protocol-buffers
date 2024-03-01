@@ -2,7 +2,19 @@ syntax = "proto2";
 
 package protobuf.server.init;
 
-message PBPlayerInitReady {
+// Error Messages
+message PBPlayerInitError {
+  required string error_code = 1;
+}
+
+enum PBPlayerInitErrorCode {
+  UNKNOWN = 0;
+  INVALID_PLAYER_CREDENTIALS = 1;
+  PLAYER_ALREADY_EXISTS = 2;
+}
+
+// Success Message
+message PBPlayerInitSuccess {
   required PBPlayerInitialState initialState = 1;
 }
 

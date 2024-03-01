@@ -1,0 +1,8 @@
+syntax = "proto2";
+
+package protobuf.client.init;
+
+message PBPlayerLogin {
+    required string username = 1;
+    required string password = 2;
+}
