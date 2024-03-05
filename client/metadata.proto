@@ -12,4 +12,5 @@ enum PBClientMessageType {
     PBPlayerRegister = 1;
     PBPlayerMovement = 2;
     PBPlayerMessage = 3;
+    PBPlayerChangeMap = 4;
 }

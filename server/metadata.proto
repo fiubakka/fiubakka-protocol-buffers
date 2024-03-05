@@ -12,4 +12,5 @@ enum PBServerMessageType {
     PBPlayerMessage = 1;
     PBPlayerInitError = 2;
     PBPlayerInitSuccess = 3;
+    PBPlayerChangeMapReady = 4;
 }
