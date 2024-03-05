@@ -1,0 +1,7 @@
+syntax = "proto2";
+
+package protobuf.client.map;
+
+message PBPlayerChangeMap {
+    required int32 new_map_id = 1;
+}
