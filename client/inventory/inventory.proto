@@ -5,7 +5,7 @@ package protobuf.client.inventory;
 enum PBItemType {
     hair = 0;
     outfit = 1;
-    facial hair = 2;
+    facial_hair = 2;
     glases = 3;
     hats = 4;
 }
