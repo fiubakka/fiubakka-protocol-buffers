@@ -1,0 +1,16 @@
+syntax = "proto2";
+
+package protobuf.client.inventory;
+
+enum PBItemType {
+    hair = 0;
+    outfit = 1;
+    facial hair = 2;
+    glases = 3;
+    hats = 4;
+}
+
+message PBINewnventoryItem {
+    required uint32 id = 1;
+    required PBItemType type = 2;
+}
