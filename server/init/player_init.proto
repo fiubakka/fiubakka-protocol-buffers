@@ -21,6 +21,7 @@ message PBPlayerInitSuccess {
 message PBPlayerInitialState {
   required PBPlayerPosition position = 1;
   required PBPlayerEquipment equipment = 2;
+  required int32 mapId = 3;
 }
 
 message PBPlayerPosition {
