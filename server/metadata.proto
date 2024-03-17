@@ -13,4 +13,5 @@ enum PBServerMessageType {
     PBPlayerInitError = 2;
     PBPlayerInitSuccess = 3;
     PBPlayerChangeMapReady = 4;
+    PBGameEntityDisconnect = 5;
 }
