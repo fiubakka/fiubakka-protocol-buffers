@@ -14,4 +14,7 @@ enum PBClientMessageType {
     PBPlayerMessage = 3;
     PBPlayerChangeMap = 4;
     PBPlayerUpdateEquipment = 5;
+    PBTrucoMatchChallenge = 6;
+    PBTrucoMatchChallengeReply = 7;
+    PBTrucoPlay = 8;
 }
