@@ -1,0 +1,26 @@
+syntax = "proto2";
+
+package protobuf.client.truco;
+
+message PBTrucoPlay {
+    required int32 playId = 1;
+    required PBTrucoPlayType type = 2;
+    optional int32 card = 3;
+    optional PBTrucoShout shout = 4;
+}
+
+enum PBTrucoPlayType {
+    CARD = 0;
+    SHOUT = 1;
+}
+
+enum PBTrucoShout {
+    ENVIDO = 0;
+    REAL_ENVIDO = 1;
+    FALTA_ENVIDO = 2;
+    TRUCO = 3;
+    RETRUCO = 4;
+    VALE_CUATRO = 5;
+    QUIERO = 6;
+    NO_QUIERO = 7;
+}

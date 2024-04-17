@@ -1,7 +1,0 @@
-syntax = "proto2";
-
-package protobuf.client.truco;
-
-message PBAcceptedTrucoMatch {
-    required string opponent_username = 1;
-}

@@ -1,0 +1,13 @@
+syntax = "proto2";
+
+package protobuf.client.truco;
+
+message PBTrucoMatchChallengeReply {
+    required string opponent_username = 1;
+    required PBTrucoMatchChallengeReplyEnum status = 2;
+}
+
+enum PBTrucoMatchChallengeReplyEnum {
+    ACCEPTED = 0;
+    REJECTED = 1;
+}

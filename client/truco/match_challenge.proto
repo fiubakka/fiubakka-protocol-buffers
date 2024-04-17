@@ -2,6 +2,6 @@ syntax = "proto2";
 
 package protobuf.client.truco;
 
-message PBBeginTrucoMatch {
+message PBTrucoMatchChallenge {
     required string opponent_username = 1;
 }
