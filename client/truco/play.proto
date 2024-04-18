@@ -4,7 +4,7 @@ package protobuf.client.truco;
 
 message PBTrucoPlay {
     required int32 playId = 1;
-    required PBTrucoPlayType type = 2;
+    required PBTrucoPlayType playType = 2;
     optional int32 card = 3;
     optional PBTrucoShout shout = 4;
 }
