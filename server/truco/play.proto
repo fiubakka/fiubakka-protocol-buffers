@@ -18,7 +18,7 @@ message PBTrucoPlay {
 message PBTrucoNextPlay {
     required string nextPlayer = 1;
     required bool isPlayCardAvailable = 2; // If false, only shouts are available
-    required repeated PBTrucoShout availableShouts = 3;
+    repeated PBTrucoShout availableShouts = 3;
 }
 
 enum PBTrucoPlayType {
