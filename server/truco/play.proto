@@ -1,0 +1,50 @@
+syntax = "proto2";
+
+package protobuf.server.truco;
+
+// TODO add envido missing messages (ie. for points)
+message PBTrucoPlay {
+    required int32 playId = 1;
+    required PBTrucoPlayType playType = 2;
+    required bool isGameOver = 3;
+    required bool isMatchOver = 4;
+    optional PBTrucoCard card = 5;
+    optional PBTrucoShout shout = 6;
+    optional PBTrucoNextPlay nextPlayInfo = 7;
+    optional PBTrucoPoints firstPlayerPoints = 8;
+    optional PBTrucoPoints secondPlayerPoints = 9;
+}
+
+message PBTrucoNextPlay {
+    required string nextPlayer = 1;
+    required bool isPlayCardAvailable = 2; // If false, only shouts are available
+    required repeated PBTrucoShout availableShouts = 3;
+}
+
+enum PBTrucoPlayType {
+    CARD = 0;
+    SHOUT = 1;
+}
+
+message PBTrucoCard {
+    required int32 suit = 1;
+    required int32 number = 2;
+}
+
+enum PBTrucoShout {
+    ENVIDO = 0;
+    REAL_ENVIDO = 1;
+    FALTA_ENVIDO = 2;
+    ENVIDO_QUIERO = 3;
+    ENVIDO_NO_QUIERO = 4;
+    TRUCO = 5;
+    RETRUCO = 6;
+    VALE_CUATRO = 7;
+    TRUCO_QUIERO = 8;
+    TRUCO_NO_QUIERO = 9;
+}
+
+message PBTrucoPoints {
+    required int32 playerName = 1;
+    required int32 points = 2;
+}
