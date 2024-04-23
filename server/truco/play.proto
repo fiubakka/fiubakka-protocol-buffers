@@ -6,13 +6,15 @@ package protobuf.server.truco;
 message PBTrucoPlay {
     required int32 playId = 1;
     required PBTrucoPlayType playType = 2;
-    required bool isGameOver = 3;
-    required bool isMatchOver = 4;
-    optional PBTrucoCard card = 5;
-    optional PBTrucoShout shout = 6;
-    optional PBTrucoNextPlay nextPlayInfo = 7;
-    optional PBTrucoPoints firstPlayerPoints = 8;
-    optional PBTrucoPoints secondPlayerPoints = 9;
+    repeated PBTrucoCard yourCards = 3;
+    required int32 opponentCardAmount = 4;
+    PBTrucoPoints firstPlayerPoints = 5;
+    PBTrucoPoints secondPlayerPoints = 6;
+    required bool isGameOver = 7;
+    required bool isMatchOver = 8;
+    optional PBTrucoCard card = 9;
+    optional PBTrucoShout shout = 10;
+    optional PBTrucoNextPlay nextPlayInfo = 11;
 }
 
 message PBTrucoNextPlay {
@@ -27,8 +29,9 @@ enum PBTrucoPlayType {
 }
 
 message PBTrucoCard {
-    required int32 suit = 1;
-    required int32 number = 2;
+    required int32 cardId = 1;
+    required int32 suit = 2;
+    required int32 number = 3;
 }
 
 enum PBTrucoShout {
