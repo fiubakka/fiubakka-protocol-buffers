@@ -48,6 +48,6 @@ enum PBTrucoShout {
 }
 
 message PBTrucoPoints {
-    required int32 playerName = 1;
+    required string playerName = 1;
     required int32 points = 2;
 }
