@@ -8,8 +8,8 @@ message PBTrucoPlay {
     required PBTrucoPlayType playType = 2;
     repeated PBTrucoCard yourCards = 3;
     required int32 opponentCardAmount = 4;
-    PBTrucoPoints firstPlayerPoints = 5;
-    PBTrucoPoints secondPlayerPoints = 6;
+    required PBTrucoPoints firstPlayerPoints = 5;
+    required PBTrucoPoints secondPlayerPoints = 6;
     required bool isGameOver = 7;
     required bool isMatchOver = 8;
     optional PBTrucoCard card = 9;
