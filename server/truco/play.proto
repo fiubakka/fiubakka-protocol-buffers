@@ -6,7 +6,7 @@ package protobuf.server.truco;
 message PBTrucoPlay {
     required int32 playId = 1;
     required PBTrucoPlayType playType = 2;
-    repeated PBTrucoCard yourCards = 3;
+    repeated PBTrucoCard playerCards = 3;
     required int32 opponentCardAmount = 4;
     required PBTrucoPoints firstPlayerPoints = 5;
     required PBTrucoPoints secondPlayerPoints = 6;
