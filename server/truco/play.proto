@@ -26,6 +26,7 @@ message PBTrucoNextPlay {
 enum PBTrucoPlayType {
     CARD = 0;
     SHOUT = 1;
+    UPDATE = 2;
 }
 
 enum PBTrucoCardSuit {
