@@ -7,6 +7,7 @@ message PBGameEntityState {
   required PBGameEntityPosition position = 2;
   required PBGameEntityVelocity velocity = 3;
   required PBGameEntityEquipment equipment = 4;
+  optional PBGameEntityMetrics metrics = 5;
 }
 
 message PBGameEntityPosition {
@@ -19,7 +20,6 @@ message PBGameEntityVelocity {
   required float y = 2;
 }
 
-
 message PBGameEntityEquipment {
   required int32 hat = 1;
   required int32 hair = 2;
@@ -28,4 +28,9 @@ message PBGameEntityEquipment {
   required int32 facial_hair = 5;
   required int32 body = 6;
   required int32 outfit = 7;
+}
+
+message PBGameEntityMetrics {
+  required string nodeId = 1;
+  required float messageRatePerSecond = 2;
 }
