@@ -28,7 +28,7 @@ enum PBTrucoPlayType {
     SHOUT = 1;
 }
 
-enum PBTrucoCardSuit = {
+enum PBTrucoCardSuit {
     CUPS = 0;
     SWORDS = 1;
     COINS = 2;
