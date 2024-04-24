@@ -28,9 +28,16 @@ enum PBTrucoPlayType {
     SHOUT = 1;
 }
 
+enum PBTrucoCardSuit = {
+    CUPS = 0;
+    SWORDS = 1;
+    COINS = 2;
+    CLUBS = 3;
+}
+
 message PBTrucoCard {
     required int32 cardId = 1;
-    required int32 suit = 2;
+    required PBTrucoCardSuit suit = 2;
     required int32 number = 3;
 }
 
