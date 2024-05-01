@@ -18,4 +18,5 @@ enum PBClientMessageType {
     PBTrucoMatchChallengeReply = 7;
     PBTrucoPlay = 8;
     PBTrucoPlayAck = 9;
+    PBTrucoDisconnect = 10;
 }
