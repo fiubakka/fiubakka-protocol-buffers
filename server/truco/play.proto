@@ -53,6 +53,7 @@ enum PBTrucoShout {
     VALE_CUATRO = 7;
     TRUCO_QUIERO = 8;
     TRUCO_NO_QUIERO = 9;
+    MAZO = 10;
 }
 
 message PBTrucoPoints {
