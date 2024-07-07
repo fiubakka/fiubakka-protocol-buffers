@@ -19,4 +19,5 @@ enum PBServerMessageType {
     PBTrucoPlay = 8;
     PBTrucoAllowPlay = 9;
     PBTrucoPlayerDisconnected = 10;
+    PBTrucoDisconnectAck = 11;
 }
